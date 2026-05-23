@@ -4,9 +4,14 @@ import { AppService } from './app.service';
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
+  @Get('/health')
+  getHealth() {
+    // todo: add info about db
 
-  @Get()
-  getHello(): string {
-    return this.appService.getHello();
+    return {
+      status: 'ok',
+      db: 'ok',
+      uptime: process.uptime(),
+    };
   }
 }

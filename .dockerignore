@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Compiled output
+dist
+build
+coverage
+
+# Logs
+*.log
+logs
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# IDE / OS
+.idea
+.vscode
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
